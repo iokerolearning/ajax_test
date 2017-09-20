@@ -14,9 +14,34 @@
       </nav>
 
       <div class="container" style="margin-top: 80px">
-        <div id='total-alumnos'>
+        <div id='alumnos'>
           <div class='row'>
-            <div class='col-md-12'>
+            <div class='col-md-4'>
+              <div class='messages'>
+                <div class="alert alert-danger">
+                </div>
+              </div>
+
+              <form>
+                <div class="form-group">
+                  <label for="nombres">Nombres</label>
+                  <input type="text" class="form-control" id="nombres"
+                  name='alumno[nombres]' placeholder="Ingresa los nombres">
+                </div>
+                <div class="form-group">
+                  <label for="apellidos">Apellidos</label>
+                  <input type="text" class="form-control" id="apellidos"
+                  name='alumno[apellidos]' placeholder="Ingresa los apellidos">
+                </div>
+                <div class="form-group">
+                  <label for="codigo">Codigo</label>
+                  <input type="text" class="form-control" name='alumno[codigo]' id="codigo" placeholder="Ingresa los codigo">
+                </div>
+                <button type="submit" class="btn btn-success">Guardar</button>
+              </form>
+            </div>
+
+            <div class='col-md-8'>
               <center><h2 class='text-primary' id='cargando'>Cargando...</h2><center>
               <table class="table">
                 <thead>
